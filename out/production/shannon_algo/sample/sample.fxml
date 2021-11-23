@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="30.0" layoutY="283.0" mnemonicParsing="false" onAction="#shanon_encode" prefHeight="26.0" prefWidth="127.0" text="Enc-Shanon" textFill="#ff1e1e" />
+      <Button layoutX="30.0" layoutY="319.0" mnemonicParsing="false" onAction="#decode_shannon" prefHeight="26.0" prefWidth="127.0" text="Dec-Shanon" textFill="#ff1e1e" />
+      <Button layoutX="439.0" layoutY="319.0" mnemonicParsing="false" onAction="#decode_lzw" prefHeight="26.0" prefWidth="127.0" text="Dec-LZW" textFill="#2f75f8" />
+      <Button layoutX="439.0" layoutY="283.0" mnemonicParsing="false" onAction="#encode_lzw" prefHeight="26.0" prefWidth="127.0" text="Enc-LZW" textFill="#2f75f8" />
+      <Button layoutX="236.0" layoutY="319.0" mnemonicParsing="false" onAction="#encode_decode_folder" prefHeight="26.0" prefWidth="127.0" text="Enc-Dec" />
+      <Button layoutX="236.0" layoutY="283.0" mnemonicParsing="false" onAction="#read_write_jpeg" prefHeight="26.0" prefWidth="127.0" text="RW-JPEG" />
+      <Label fx:id="message_txt" alignment="TOP_LEFT" layoutX="30.0" layoutY="39.0" prefHeight="222.0" prefWidth="331.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="file_info_txt" alignment="TOP_LEFT" layoutX="403.0" layoutY="35.0" prefHeight="222.0" prefWidth="162.0" />
+      <Text fill="#2f75f8" layoutX="30.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" />
+      <Text fill="#ff1212" layoutX="403.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Information" />
+   </children>
+</AnchorPane>
